@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+var i = 0;
+
 var things = require('./things.js'); 
 app.use('/things', things);
 
