@@ -4,14 +4,11 @@ const port = 3000
 
 var i = 0;
 
-var things = require('./things.js'); 
-app.use('/things', things);
-
 app.set('view engine', 'pug');
 app.set('views','./views');
 
 app.get('/', function(req, res){
-   res.render('first_view');
+   res.render('view1');
 });
 
 app.listen(port, () => {
